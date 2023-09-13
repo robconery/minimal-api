@@ -20,6 +20,7 @@ export const navigation = [
     title: 'Core concepts',
     links: [
       { title: 'Basic Routing', href: '/docs/concepts/routing' },
+      { title: 'Parameter Binding', href: '/docs/concepts/parameters' },
       { title: 'Data Access', href: '/docs/concepts/data-access' },
       { title: 'Error Handling', href: '/docs/concepts/errors' },
       { title: 'Environments', href: '/docs/concepts/environments' },
@@ -39,6 +40,7 @@ export const navigation = [
     links: [
       { title: 'A CRUD Applicaction', href: '/docs/advanced/crud' },
       { title: 'Adding a Database', href: '/docs/advanced/database' },
+      { title: 'Securing Your Application', href: '/docs/advanced/security' },
     ],
   }
 ]

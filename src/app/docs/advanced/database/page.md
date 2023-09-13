@@ -36,7 +36,7 @@ In order to enable database creation they are couple of steps we need to complet
 2.  Migrate your data model *(see below)* to a SQLite database.
 **Create a data model**
 
-```c
+```csharp
 class TodoItem
 {
     public int Id { get; set; }
@@ -52,7 +52,7 @@ class TodoItem
 
 In `Program.cs` below your app builder `var builder = WebApplication.CreateBuilder(args);` add a connection string.
 
-```c
+```csharp
 var connectionString = builder.Configuration.GetConnectionString("todos") ?? "Data Source=todos.db";
 ```
 
@@ -62,7 +62,7 @@ In the CRUD portion of this tutorial, we used an in-memory database. Now we are 
 
 Replace your current in-memory database implementation `builder.Services.AddDbContext<TodoDb>(options => options.UseInMemoryDatabase("items"));` in your build services with the SQLite one below:
 
-```c
+```csharp
 builder.Services.AddSqlite<TodoDb>(connectionString);
 ```
 ## Migrate data model

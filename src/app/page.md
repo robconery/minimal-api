@@ -24,7 +24,7 @@ Possimus saepe veritatis sint nobis et quam eos. Architecto consequatur odit per
 
 Minimal APIs are a simplified approach for building fast HTTP APIs with ASP.NET Core. You can create fully functioning REST endpoints with minimal code and configuration.
 
-```c
+```csharp
 var app = WebApplication.Create(args);
 
 app.MapGet("/", () => "Hello World!");
@@ -59,7 +59,7 @@ Getting to know your app.
 
 The app in your _Program.cs_ looks like this:
 
-```c
+```csharp
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
 

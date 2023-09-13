@@ -1,7 +1,11 @@
 'use client'
 
 import { Fragment } from 'react'
-import { Highlight } from 'prism-react-renderer'
+import { Highlight, Prism } from "prism-react-renderer";
+
+(typeof global !== "undefined" ? global : window).Prism = Prism
+// await import("prismjs/components/prism-csharp")
+require("prismjs/components/prism-csharp")
 
 export function Fence({ children, language }) {
   return (

@@ -2,7 +2,7 @@
 
 If you have an unexpected error in your code, then ASP.NET Core automatically tries to show you what went wrong:
 
-```c
+```csharp
 app.MapGet("/dobad", () => int.Parse("this is not an int"));
 ```
 

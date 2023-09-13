@@ -4,7 +4,7 @@ When building a web application you typically want to try and create meaningful 
 
 In your ASP.NET Core program, you use the `Map` methods to create an endpoint that binds a URL to our code:
 
-```c
+```csharp
 app.MapGet("/hello", () => "Hello World!");
 app.MapGet("/todos", () => new { TodoItem = "Learn about routing", Complete = false });
 ```
@@ -15,7 +15,7 @@ app.MapGet("/todos", () => new { TodoItem = "Learn about routing", Complete = fa
 
 You can add variables to routes using curly braces like `{id}`:
 
-```c
+```csharp
 app.MapGet("/hello/{name}", (string name) => $"Hello {name}");
 ```
 
@@ -33,7 +33,7 @@ You can specify the type of a variable by doing `/hello/{name:int}`, which would
 
 So far we've shown `MapGet`, which allows you to specify a HTTP Get action, which is what a browser sends when you go to a URL. But there are other HTTP methods you are likely to want and you can use other Map methods to get those, for example `MapPost` or `MapPut`. The other Map methods work the same as `MapGet` that we've already seen but responds to a post or put respectively. You can learn more about [HTTP request methods here](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods). For now, think of using `Post` when sending data to the app and `Get` when getting data from the app.
 
-```c
+```csharp
 app.MapGet("/hello", () => "Hello World!");
 app.MapGet("/todos", () => new { TodoItem = "Learn about routing", Complete = false });
 app.MapPost("/todos", () => Results.Ok());

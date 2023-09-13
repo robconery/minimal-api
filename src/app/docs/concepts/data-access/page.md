@@ -6,7 +6,7 @@ OK, so if you use `MapPost` to send data to the code, how does that work?
 
 The most common way of accessing data in ASP.NET Core is to create classes and let ASP.NET Core fill them in for you:
 
-```c
+```csharp
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
 
@@ -34,7 +34,7 @@ ASP.NET will try to create an instance of the class you say you need from any JS
 
 Another more basic way of accessing information, and data, from a request is using the `HttpContext` object. ASP.NET Core creates a `HttpContext` for each request, and you can access it in your code like this:
 
-```c
+```csharp
 app.MapGet("/hello/{name}", (HttpContext ctx) => $"Hello {ctx.Request.RouteValues["name"]}");
 ```
 
@@ -44,7 +44,7 @@ In this code, you are accepting an `HttpContext` and using it to manually access
 
 If you want to return some HTML rather than processing JSON like you've been doing so far, ASP.NET Core uses a language called [Razor](), which is a mix of C# and HTML to make authoring UI easier. So let's add Razor to your app:
 
-```c
+```csharp
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 var app = builder.Build();

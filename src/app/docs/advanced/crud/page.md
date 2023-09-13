@@ -4,7 +4,7 @@ If you [followed the quickstart ](/), you should have a simple API where you har
 
 For example:  
 
-```c
+```csharp
 app.MapGet("/todo", () => new { Item = "Water plants", Complete = "false" });
 ```
 
@@ -31,7 +31,7 @@ Our to-do API will be a CRUD app, and will be able to to:
 
 Create a class that models the data we want to collect, also known as a data model. Place the code for your `TodoItem` underneath `app.Run();`
 
-```c
+```csharp
 class TodoItem
 {
     public int Id { get; set; }
@@ -67,7 +67,7 @@ To setup your in memory database, add the following code snippets to our code:
 
 **Snippet 1** : Below the `TodoItem` create a `TodoDb` class 
 
-```c
+```csharp
 class TodoDb : DbContext
 {
     public TodoDb(DbContextOptions options) : base(options) { }
@@ -84,14 +84,14 @@ class TodoDb : DbContext
 
 **Snippet 2** : Before `AddSwaggerGen` services we configured in the [first tutorial](https://github.com/LadyNaggaga/minimal-apis-blog/blob/b5e97d3168b0948d8926afbd6dbc883cb32ba21a/Tutorials/Firststeps.md#interactive-api-docs) add the code snippet below.
 
-```c
+```csharp
 builder.Services.AddDbContext<TodoDb>(options => options.UseInMemoryDatabase("items"));
 ```
 **Return a list of items** 
 
 To read from a list of items in the todo list replace  the `/todo` route with the `/todos` route below. 
 
- ```c
+ ```csharp
  app.MapGet("/todos", async (TodoDb db) => await db.Todos.ToListAsync());
  ```
 
@@ -103,7 +103,7 @@ Go back your browser and navigate to `https://localhost:5001/swagger` click on t
  
  Let's `POST` new tasks to the todos list. Below `app.MapGet` you create earlier.
 
-```c
+```csharp
 app.MapPost("/todos", async (TodoDb db, TodoItem todo) =>
 {
     await db.Todos.AddAsync(todo);
@@ -146,7 +146,7 @@ The `Response body` will include the items just added.
 ```
 To `GET` an item by `id` add the code below `app.MapPost` route created earlier 
 
-```c
+```csharp
 app.MapGet("/todos/{id}", async (TodoDb db, int id) => await db.Todos.FindAsync(id));
 ```
 
@@ -157,7 +157,7 @@ To check this out you can either go to `https://localhost:5001/todos/1` or use t
 
 To update an existing item add the code below `GET /todos/{id}` route we created above.
 
-```cs 
+```csharps 
 app.MapPut("/todos/{id}", async ( TodoDb db, TodoItem updateTodo ,int id) =>
 {
     var todo = await db.Todos.FindAsync(id);
@@ -196,7 +196,7 @@ To test this out scroll back to **`GET`**`/todos/{id}` and now Water Plants is m
 
 To delete an existing item add the code below **`PUT`**`/todos/{id}` we created above.
 
-```c
+```csharp
 app.MapDelete("/todos/{id}", async (TodoDb db, int id) =>
 {
     var todo = await db.Todos.FindAsync(id);

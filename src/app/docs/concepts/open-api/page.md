@@ -18,14 +18,14 @@ dotnet add package swashbuckle.aspnetcore
 
 Open the `Program.cs` file and add the code below `var builder = WebApplication.CreateBuilder(args);`. The snippet below will generate the code you'll need to generate OpenAPI descriptions for your API. 
 
-```c
+```csharp
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 ```
 
 To enable Swagger UI test page to test your API during development, add this code after the call to `builder.Build()`, which is left in below for reference purposes only. 
 
-```c
+```csharp
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -51,7 +51,7 @@ Numerous extension methods exist to enable customization of the generated OpenAP
 
 You can set the EndpointName or `EndpointGroupName` of an endpoint using the `WithName` and `WithGroupName` extension methods as follows.
 
-```c
+```csharp
 string SomeMessage() => "Hello World.";
 app.MapGet("/hello", SomeMessage).WithName("WelcomeMessage").WithGroupName("Greetings");
 ```
@@ -60,28 +60,28 @@ app.MapGet("/hello", SomeMessage).WithName("WelcomeMessage").WithGroupName("Gree
 
 On the topic of endpoint names, by default, endpoints that use a method group or named lambda will have their endpoint name set to the method name. For example, in the code snippet below, the endpoint will have a default endpoint name of `SomeMessage`.
 
-```c
+```csharp
 string SomeMessage() => "Hello World.";
 app.MapGet("/hello", SomeMessage);
 ```
 
 This default endpoint name can be overloaded by using the `WithName` extension method as referenced above.
 
-```c
+```csharp
 string SomeMessage() => "Hello World.";
 app.MapGet("/hello", SomeMessage).WithName("MyOwnSpecialName");
 ```
 
 To omit an endpoint from being displayed in API metadata, you can use the ExcludeFromDescription extension method on the endpoint.
 
-```c
+```csharp
 string SomeMessage() => "Hello World.";
 app.MapGet("/hello", SomeMessage).ExcludeFromDescription();
 ```
 
 Let's say that you did want an endpoint to be annotated. In addition to endpoint names, you can also use the various `ProducesX` endpoints to indicate the response types of a method. The available extension methods are:
 
-```c
+```csharp
 Produces<TResponse>(int statusCode = 200, 
     string? contentType = "application/json", 
     params string[] additionalContentTypes)
@@ -100,7 +100,7 @@ ProducesValidationProblem(int statusCode = 400,
 
 In general, the `Produces` extension methods give you the flexibility to set a `ProblemDetails` response type for your endpoint or define what response it returns on happy-path scenarios. You can do this with the generic-typed implementation `Produces<TResponse>` or with the `Produces` attribute. So, for example, to define the response metadata for a POST method that returns a `Todo` or a `ProblemDetails` response you can annotate it using the following extension methods.
 
-```c
+```csharp
 app.MapPost("/todos", (Todo todo) => { ... })
    .ProducesProblem(401)
    .Produces<Todo>(201);

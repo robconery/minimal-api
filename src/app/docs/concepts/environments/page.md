@@ -8,7 +8,7 @@ Here, you can see the terminal output saying `Hosting environment: Development`.
 
 The error handling page showed above only appears when the environment is `Development`. You can check the environment value yourself like this:
 
-```c
+```csharp
 if (app.Environment.IsDevelopment())
 {
     app.MapGet("/OnlyInDev",
@@ -18,7 +18,7 @@ if (app.Environment.IsDevelopment())
 
 You can set the environment variable to whatever value you want and add whatever logic you like to your app based on the environment.
 
-```c
+```csharp
 if (app.Environment.EnvironmentName == "TestEnvironment")
 {
     app.MapGet("/OnlyInTestEnvironment", () => "TestEnvironment");
