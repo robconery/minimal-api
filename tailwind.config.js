@@ -3,7 +3,7 @@ const typographyPlugin = require('@tailwindcss/typography')
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx,md}'],
-  darkMode: 'class',
+  darkMode: "class",
   theme: {
     fontSize: {
       xs: ['0.75rem', { lineHeight: '1rem' }],

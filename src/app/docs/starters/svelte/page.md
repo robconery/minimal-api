@@ -1,0 +1,3 @@
+# The Svelte Starter Template for ASP.NET Minimal API
+
+TBD...
