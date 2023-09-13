@@ -53,8 +53,8 @@ export function Hero() {
                 Rapidly move from idea to a functioning application. All the features of C# web applications without the ceremony.
               </p>
               <div className="mt-8 flex gap-4 md:justify-center lg:justify-start">
-                <Button href="/">Get started</Button>
-                <Button href="/" variant="secondary">
+                <Button href="/docs/">Get started</Button>
+                <Button href="https://github.com/Minimal-APIs" variant="secondary">
                   View on GitHub
                 </Button>
               </div>

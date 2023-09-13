@@ -1,12 +1,5 @@
 export const navigation = [
-  {
-    title: 'Introduction',
-    links: [
-      { title: 'Installation', href: '/docs/installation' },
-      { title: 'Getting started', href: '/docs/quickstart' },
 
-    ],
-  },
   {
     title: 'Starter Templates',
     links: [
@@ -41,6 +34,12 @@ export const navigation = [
       { title: 'A CRUD Applicaction', href: '/docs/advanced/crud' },
       { title: 'Adding a Database', href: '/docs/advanced/database' },
       { title: 'Securing Your Application', href: '/docs/advanced/security' },
+    ],
+  },
+  {
+    title: 'Tutorials',
+    links: [
+      { title: 'Introduction', href: '/tutorials' }
     ],
   }
 ]
