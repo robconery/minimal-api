@@ -23,10 +23,10 @@ const lexend = localFont({
 export const metadata = {
   title: {
     template: '%s - Docs',
-    default: 'ASP.NET Minimal API - less ceremony, more power.',
+    default: 'Welcome to Tailwind Traders.',
   },
   description:
-    "Minimal APIs is built using C#. An open-source, modern, object-oriented, and type-safe programming language you'll love",
+    "We've opened up our code, processes and documentation to the programming community. Learning in the open is groovy!",
 }
 
 export default function RootLayout({ children }) {

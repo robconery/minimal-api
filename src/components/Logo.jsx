@@ -1,5 +1,5 @@
 import Image from "next/image";
-import miniImage from '@/images/minics.png'
+import miniImage from '@/images/horizontal.png'
 function LogomarkPaths() {
   return (
     <g fill="none" stroke="#38BDF8" strokeLinejoin="round" strokeWidth={3}>
@@ -19,6 +19,6 @@ export function Logomark(props) {
 
 export function Logo(props) {
   return (
-    <Image src={miniImage} alt="ASP.NET Minimal API" width={100} height={30}/>
+    <Image src={miniImage} alt="ASP.NET Minimal API" width={250} height={60}/>
   )
 }

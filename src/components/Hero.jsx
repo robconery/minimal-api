@@ -47,10 +47,10 @@ export function Hero() {
             />
             <div className="relative">
               <p className="inline bg-gradient-to-r from-indigo-200 via-sky-400 to-indigo-200 bg-clip-text font-display text-5xl tracking-tight text-transparent">
-                ASP.NET Minimal API
+                Welcome to Tailwind Traders
               </p>
               <p className="mt-3 text-2xl tracking-tight text-slate-400">
-                Rapidly move from idea to a functioning application. All the features of C# web applications without the ceremony.
+                We've opened up our development process, learning and building as transparently as we can.
               </p>
               <div className="mt-8 flex gap-4 md:justify-center lg:justify-start">
                 <Button href="/docs/">Get started</Button>
