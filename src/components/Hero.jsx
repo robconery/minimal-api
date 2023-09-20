@@ -50,7 +50,7 @@ export function Hero() {
                 Welcome to Tailwind Traders
               </p>
               <p className="mt-3 text-2xl tracking-tight text-slate-400">
-                We've opened up our development process, learning and building as transparently as we can.
+                We have opened up our development process, learning and building as transparently as we can.
               </p>
               <div className="mt-8 flex gap-4 md:justify-center lg:justify-start">
                 <Button href="/docs/">Get started</Button>
