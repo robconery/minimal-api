@@ -1,23 +1,5 @@
 # Powered By ASP.NET Minimal API
 
-Build powerful, simple APIs with C# and .NET
-
-{% quick-links %}
-
-{% quick-link title="Getting Started" icon="plugins" href="/home" description="Minimal API is all about keeping it simple - here are the basics you should understand" /%}
-
-{% quick-link title="Building With Our Blocks" icon="presets" href="/docs/architecture" description="How do you structure your API? Here are some tips." /%}
-
-{% quick-link title="Resources and Reference" icon="installation" href="/docs/advanced" description="Moving beyond Todo list stuff, let's dig in to the details." /%}
-
-{% quick-link title="Templates" icon="theming" href="/docs/starters" description="Get off the ground quickly with our prebuilt starter templates." /%}
-
-{% /quick-links %}
-
----
-
-## What's a Minimal API?
-
 Minimal APIs are a simplified approach for building fast HTTP APIs with ASP.NET Core. You can create fully functioning REST endpoints with minimal code and configuration.
 
 ASP.NET Minimal APIs are built using C#, an open-source, modern, object-oriented, and type-safe programming language you'll love. 
@@ -55,22 +37,7 @@ app.MapGet("/", () => "GET request to the homepage");
 app.MapPost("/", () => "POST request to the homepage");
 ```
 
-## Get Started With Our Blocks
+## Ready To Learn More?
 
-Tailwind Traders has created a set of APIs built with ASP.NET Minimal API, and we have open sourced these "blocks", as we call them, so that you can rapidly build a business of your own using our goodies.
+Getting started with ASP.NET Minimal API is pretty straightforward! Let's start out by [getting to know what a basic application looks like](/home).
 
-Each one has deployment options for Microsoft Azure, so you can **move rapidly from idea to startup running on Azure in very little time**.
-
-### Simple, Markdown CMS
-
-We believe in the power of simplicity and it doesn't get much simpler than a bunch of markdown documents that are loaded into memory, queryable using LINQ.
-
-### Flexible Email List Service
-
-### eCommerce Store Powered by Stripe
-
-### A Simple Job Queue
-
-### Digital Fulfillment
-
-### A Blog, Powered by Markdown
