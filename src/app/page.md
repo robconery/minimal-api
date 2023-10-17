@@ -1,16 +1,14 @@
----
-title: ASP.NET Minimal API
----
+# Powered By ASP.NET Minimal API
 
-Build powerful, simple APIs with C# and .NET {% .lead %}
+Build powerful, simple APIs with C# and .NET
 
 {% quick-links %}
 
-{% quick-link title="Concepts" icon="plugins" href="/docs/concepts" description="Minimal API is all about keeping it simple - here are the basics you should understand" /%}
+{% quick-link title="Getting Started" icon="plugins" href="/home" description="Minimal API is all about keeping it simple - here are the basics you should understand" /%}
 
-{% quick-link title="Architecture guide" icon="presets" href="/docs/architecture" description="How do you structure your API? Here are some tips." /%}
+{% quick-link title="Building With Our Blocks" icon="presets" href="/docs/architecture" description="How do you structure your API? Here are some tips." /%}
 
-{% quick-link title="Advanced Topics" icon="installation" href="/docs/advanced" description="Moving beyond Todo list stuff, let's dig in to the details." /%}
+{% quick-link title="Resources and Reference" icon="installation" href="/docs/advanced" description="Moving beyond Todo list stuff, let's dig in to the details." /%}
 
 {% quick-link title="Templates" icon="theming" href="/docs/starters" description="Get off the ground quickly with our prebuilt starter templates." /%}
 
@@ -22,21 +20,9 @@ Build powerful, simple APIs with C# and .NET {% .lead %}
 
 Minimal APIs are a simplified approach for building fast HTTP APIs with ASP.NET Core. You can create fully functioning REST endpoints with minimal code and configuration.
 
-```csharp
-var app = WebApplication.Create(args);
+ASP.NET Minimal APIs are built using C#, an open-source, modern, object-oriented, and type-safe programming language you'll love. 
 
-app.MapGet("/", () => "Hello World!");
-
-app.Run();
-```
-
-## Great for Microservices
-
-Minimal APIs are great for building microservices for your applications fast.
-
-## C# Ecosystem
-
-Minimal APIs is built using C#. An open-source, modern, object-oriented, and type-safe programming language you'll love. Build an API in C# with just **3 lines of code**.
+You can build an API in C# with just **3 lines of code**:
 
 ```csharp
 var app = WebApplication.Create(args);
@@ -46,21 +32,10 @@ app.MapGet("/", () => "Hello World!");
 app.Run();
 ```
 
-## Routing
+Minimal code patterns have been popular in modern web frameworks for a while. If you're familiar with these frameworks (Express, Flask, Sinatra) then you'll feel right at home with ASP.NET Minimal API.
 
-Minimal routes by design. Create meaningful low ceremony URLs that execute your code.
+For example, here is how routing works with Express, the NodeJS web framework:
 
-```csharp
-app.MapGet("/", () => "Hello World!");
-```
-
-## Feels familiar
-
-Minimal code patterns have been popular in JavaScript and Python web frameworks for a while. Whether you are familiar with Express or Flask, we think you can easily do things you enjoy about those frameworks with minimal APIs as well. 
-
-**For example**
-
-Routes in Express 
 ```js
 // GET method route
 app.get('/', function (req, res) {
@@ -73,9 +48,29 @@ app.post('/', function (req, res) {
 })
 ```
 
-Routes in minimal APIs:
+Here are those same routes with MinimalAPI:
 
 ```csharp
 app.MapGet("/", () => "GET request to the homepage");
 app.MapPost("/", () => "POST request to the homepage");
 ```
+
+## Get Started With Our Blocks
+
+Tailwind Traders has created a set of APIs built with ASP.NET Minimal API, and we have open sourced these "blocks", as we call them, so that you can rapidly build a business of your own using our goodies.
+
+Each one has deployment options for Microsoft Azure, so you can **move rapidly from idea to startup running on Azure in very little time**.
+
+### Simple, Markdown CMS
+
+We believe in the power of simplicity and it doesn't get much simpler than a bunch of markdown documents that are loaded into memory, queryable using LINQ.
+
+### Flexible Email List Service
+
+### eCommerce Store Powered by Stripe
+
+### A Simple Job Queue
+
+### Digital Fulfillment
+
+### A Blog, Powered by Markdown

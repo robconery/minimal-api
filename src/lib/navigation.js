@@ -1,45 +1,37 @@
 export const navigation = [
 
   {
-    title: 'Starter Templates',
+    title: 'Getting Started',
     links: [
-      { title: 'Introduction', href: '/docs/starters' },
-      { title: 'Vue', href: '/docs/starters/vue' },
-      { title: 'Svelte', href: '/docs/starters/svelte' },
+      { title: 'The Basic Tailwind API', href: '/home/' },
+      { title: 'Routing', href: '/home/routing' },
+      { title: 'Working With Data', href: '/home/data/' },
+      { title: 'Testing', href: '/docs/' },
+      { title: 'Using Vue', href: '/docs/starters/vue' },
+      { title: 'Using Svelte', href: '/docs/starters/svelte' }
+    ],
+  },
+  {
+    title: 'Building On Top of Tailwind',
+    links: [
+      { title: 'Using Our Building Blocks', href: '/docs/starters' },
+      { title: 'Simple Content Management', href: '/docs/starters' },
+      { title: 'Email Service', href: '/docs/starters/vue' },
+      { title: 'Jobs and Queues', href: '/docs/' },
+      { title: 'eCommerce', href: '/docs/' },
+      { title: 'Digital Fulfillment', href: '/docs/' },
+      { title: 'Blog', href: '/docs/' },
     ],
   },
 
   {
-    title: 'Core concepts',
+    title: 'Resources and Reference ',
     links: [
-      { title: 'Basic Routing', href: '/docs/concepts/routing' },
-      { title: 'Parameter Binding', href: '/docs/concepts/parameters' },
-      { title: 'Data Access', href: '/docs/concepts/data-access' },
-      { title: 'Error Handling', href: '/docs/concepts/errors' },
-      { title: 'Environments', href: '/docs/concepts/environments' },
-      { title: 'Open API', href: '/docs/concepts/open-api' },
+      { title: 'What Is This?', href: '/about' },
+      { title: 'GitHub', href: 'https://github.com/tailwind-traders-dev' },
+      { title: 'Discussions', href: 'https://github.com/orgs/tailwind-traders-dev/discussions' },
+      { title: 'Projects', href: 'https://github.com/orgs/tailwind-traders-dev/projects' },
 
-    ],
-  },
-
-  {
-    title: 'Architecture',
-    links: [
-      { title: 'Introduction', href: '/docs/architecture' },
-    ],
-  },
-  {
-    title: 'Advanced guides',
-    links: [
-      { title: 'A CRUD Applicaction', href: '/docs/advanced/crud' },
-      { title: 'Adding a Database', href: '/docs/advanced/database' },
-      { title: 'Securing Your Application', href: '/docs/advanced/security' },
-    ],
-  },
-  {
-    title: 'Tutorials',
-    links: [
-      { title: 'Introduction', href: '/tutorials' }
     ],
   }
 ]
