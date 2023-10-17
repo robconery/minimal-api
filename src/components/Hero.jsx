@@ -53,8 +53,8 @@ export function Hero() {
                 We have opened up our development process, learning and building as transparently as we can.
               </p>
               <div className="mt-8 flex gap-4 md:justify-center lg:justify-start">
-                <Button href="/docs/">Get started</Button>
-                <Button href="https://github.com/Minimal-APIs" variant="secondary">
+                <Button href="/home">Get started</Button>
+                <Button href="https://github.com/tailwind-traders-dev" variant="secondary">
                   View on GitHub
                 </Button>
               </div>
