@@ -50,14 +50,14 @@ Using these guidelines, we come up with 3-5 personas, give them names and, if th
 
 ### The user stories 
 
-For testing the Mail application, we might have a user we've created named Scott who is well-known online with hundreds of thousands of followers on his social feeds as well as in his mailing list.
+For testing the Mail application, we might have a user we've created named Jon who is well-known online with hundreds of thousands of followers on his social feeds as well as in his mailing list.
 
-Scott has heard about our project and is interested in what we offer because he's currently paying $699 USD/mo to maintain his list, and has, many times, thought about creating his own service because he's a skilled .NET developer.
+Jon has heard about our project and is interested in what we offer because he's currently paying $699 USD/mo to maintain his list, and has, many times, thought about creating his own service because he's a skilled .NET developer.
 
 This story is what drives our testing process:
 
 ```cs
-public class Scott_wants_to_broadcast_to_his_list: TestBase
+public class Jon_wants_to_broadcast_to_his_list: TestBase
 {
   [Fact]
   public async Task All_the_emails_are_queued()
@@ -70,17 +70,17 @@ public class Scott_wants_to_broadcast_to_his_list: TestBase
     //...
   }
   [Fact]
-  public async Task Scott_sees_the_send_process()
+  public async Task Jon_sees_the_send_process()
   {
     //...
   }
   [Fact]
-  public async Task Scott_can_kill_the_process()
+  public async Task Jon_can_kill_the_process()
   {
     //...
   }
   [Fact]
-  public async Task Scott_can_empty_the_queue()
+  public async Task Jon_can_empty_the_queue()
   {
     //...
   }
@@ -88,7 +88,7 @@ public class Scott_wants_to_broadcast_to_his_list: TestBase
 }
 ```
 
-The `class` name is the _scenario_ and each test illustrates the events in that scenario, hopefully touching on all the possibilities and concerns Scott might have. 
+The `class` name is the _scenario_ and each test illustrates the events in that scenario, hopefully touching on all the possibilities and concerns Jon might have. 
 
 ### The `TestBase` class
 
