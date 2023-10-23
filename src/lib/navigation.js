@@ -6,7 +6,7 @@ export const navigation = [
       { title: 'The Basic Tailwind API', href: '/home/' },
       { title: 'Routing', href: '/home/routing' },
       { title: 'Working With Data', href: '/home/data/' },
-      { title: 'Testing', href: '/docs/' },
+      { title: 'Testing', href: '/home/testing/' },
       { title: 'Using Vue', href: '/docs/starters/vue' },
       { title: 'Using Svelte', href: '/docs/starters/svelte' }
     ],
@@ -15,6 +15,7 @@ export const navigation = [
     title: 'Building On Top of Tailwind',
     links: [
       { title: 'Using Our Building Blocks', href: '/docs/starters' },
+      { title: 'The Job Engine', href: '/blocks/jobs' },
       { title: 'Simple Content Management', href: '/docs/starters' },
       { title: 'Email Service', href: '/docs/starters/vue' },
       { title: 'Jobs and Queues', href: '/docs/' },
