@@ -4,6 +4,7 @@ export const navigation = [
     title: 'Getting Started',
     links: [
       { title: 'The Basic Tailwind API', href: '/home/' },
+      { title: 'Using Swagger', href: '/home/swagger' },
       { title: 'Routing', href: '/home/routing' },
       { title: 'Working With Data', href: '/home/data/' },
       { title: 'Testing', href: '/home/testing/' },
