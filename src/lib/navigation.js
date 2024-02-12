@@ -6,6 +6,7 @@ export const navigation = [
       { title: 'The Basic Tailwind API', href: '/home/' },
       { title: 'Using Swagger', href: '/home/swagger' },
       { title: 'Routing', href: '/home/routing' },
+      { title: 'Dependency Injection', href: '/docs/concepts/di' },
       { title: 'Data Access With Entity Framework', href: '/home/data/ef' },
       { title: 'Data Access With Dapper', href: '/home/data/dapper' },
       { title: 'Testing', href: '/home/testing/' },
