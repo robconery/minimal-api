@@ -1,6 +1,13 @@
 # Data Access With Dapper
 
-[Dapper](https://github.com/DapperLib/Dapper) is a small, targeted data access library that keeps the concepts simple and focuses on spped. You can write SQL by hand and let Dapper do the rest, or you can install extensions on top of Dapper that do rudimentary mapping and more. Created by the Stack Overflow team, Dapper is loved by thousands of developers.
+[Dapper](https://github.com/DapperLib/Dapper) is a small, targeted data access library that keeps the concepts simple and focuses on speed. You can write SQL by hand and let Dapper do the rest, or you can install extensions on top of Dapper that do rudimentary mapping and more. Created by the StackOverflow team, Dapper is loved by thousands of developers.
+
+Installing Dapper is straightforward, however you need to be sure you also add the database library you're working with:
+
+```sh
+dotnet add package Dapper
+dotnet add package Npgsql
+```
 
 Dapper is a thin layer of abstraction that extends `IDbConnection`. This code is from the documentation on GitHub:
 
