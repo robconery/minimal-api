@@ -1,4 +1,4 @@
-# Working with Data
+# Data Access With Entity Framework
 
 You have quite a few choices when it comes to data access, but the most common scenario when working in .NET is to use [Entity Framework](https://learn.microsoft.com/en-us/ef/), commonly called "EF", which is what we'll do here as that's how we're accessing data in our block apps.
 

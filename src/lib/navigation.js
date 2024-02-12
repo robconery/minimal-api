@@ -6,7 +6,8 @@ export const navigation = [
       { title: 'The Basic Tailwind API', href: '/home/' },
       { title: 'Using Swagger', href: '/home/swagger' },
       { title: 'Routing', href: '/home/routing' },
-      { title: 'Working With Data', href: '/home/data/' },
+      { title: 'Data Access With Entity Framework', href: '/home/data/ef' },
+      { title: 'Data Access With Dapper', href: '/home/data/dapper' },
       { title: 'Testing', href: '/home/testing/' },
       { title: 'Using Vue', href: '/docs/starters/vue' },
       { title: 'Using Svelte', href: '/docs/starters/svelte' }
